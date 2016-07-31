@@ -1,0 +1,47 @@
+.projectsTop
+	#carousel2.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+		%ol.carousel-indicators
+			%li.active{"data-slide-to" => "0", "data-target" => "#carousel2"}
+			%li{"data-slide-to" => "1", "data-target" => "#carousel2"}
+			%li{"data-slide-to" => "2", "data-target" => "#carousel2"}
+		.carousel-inner
+			.active.item
+				%img{:src => "assets/pinkthink.png", :id => "pinkThink_1"}
+			.item
+				%img{:src => "assets/pinkthink2.png", :id => "pinkThink_2"}
+			.item
+				%img{:src => "assets/pinkthink3.png", :id => "pinkThink_3"}
+		%a.carousel-control.left{"data-slide" => "prev", :href => "#carousel2"} ‹
+		%a.carousel-control.right{"data-slide" => "next", :href => "#carousel2"} ›
+
+	.projectDetails
+		%h1 PinkThink
+		%h2 Hackathon Winner 2015
+		
+		.projectTable
+			%table
+				%tr
+					%td
+						%b Role:
+					%td
+						%b Product Leader, UX & Graphic Designer
+				%tr
+					%td
+						%b Website:
+					%td
+						%a{:href => "http://devpost.com/software/p-uhdkis", :target => "_blank"} devpost.com/software/p-uhdkis
+				%tr
+					%td
+						%b Awards:
+					%td Judge's Choice, Best PinkThink Hack
+				%tr
+					%td
+						%b Tools:
+					%td HTML/CSS, Javascript, Arduino, Canva, Python, Photoshop
+
+%br
+	.projectDescription
+		%h3 Description
+		%p I was sponsored by the Anita Borg Institute to attend the Qualcomm EmpowHERment Summit Hackathon in San Diego, CA. With just one year of programming under my belt, this event was a significant milestone for me. Our team of 4 created an interactive web platform for the non-profit PinkThink. As the Product Leader, I helped shape our team's product and developed business ideas that the PinkThink Founder incorporated in their official indigogo campaign.
+		%h3 Product
+		%p Our platform fully integrates an Arduino-based block coding editor in order to work fully with the back end hardware for the PinkThink bracelet. I came up with the idea to incorporate "code stories" where users would interact with their programmable bracelet by following code challenges to advance. Our thoughtful approach to product development helped us win two hackathon awards, and it was here that I solidified my decision to transition into Computer Science. You can read more about this experience in my Publications page!

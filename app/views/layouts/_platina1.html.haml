@@ -1,0 +1,47 @@
+.projectsTop
+	#carousel4.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+		%ol.carousel-indicators
+			%li.active{"data-slide-to" => "0", "data-target" => "#carousel4"}
+			%li{"data-slide-to" => "1", "data-target" => "#carousel4"}
+			%li{"data-slide-to" => "2", "data-target" => "#carousel4"}
+		.carousel-inner
+			.active.item
+				%img{:src => "assets/platina.png", :id => "platina_1"}
+			.item
+				%img{:src => "assets/platina2.png", :id => "platina_2"}
+			.item
+				%img{:src => "assets/platina3.png", :id => "platina_3"}
+		%a.carousel-control.left{"data-slide" => "prev", :href => "#carousel4"} ‹
+		%a.carousel-control.right{"data-slide" => "next", :href => "#carousel4"} ›
+
+	.projectDetails
+		%h1 Platina
+		%h2 Education Group
+		.projectTable
+			%table
+				%tr
+					%td
+						%b Role:
+					%td
+						%b Product Manager, Front-end Developer
+				%tr
+					%td
+						%b Website:
+					%td
+						%a{:href => "http://platina-education.com", :target => "_blank"} platina-education.com
+						(not yet launched)
+				%tr
+					%td
+						%b Status:
+					%td Submitted - Software Engineering project
+				%tr
+					%td
+						%b Tools:
+					%td Ruby on Rails, Bootstrap, HTML/CSS, Javascript, Git, Heroku, PivotalTracker
+
+%br
+	.projectDescription
+		%h3 Description
+		%p For my Software Engineering course in Spring 2016, my group of 5 worked closely with the academic prep start-up Platina Education Group to develop their website. This was my first time working in a development environment and using git to develop with multiple team members. I lead weekly scrum meetings and assisted our client with thinking through the Platina product. Some of our features include: Login and Sign up, Authorization privileges (user/admin), blog posts, User database, and Image upload using Paperclip.
+		%h3 Product
+		%p Platina Education was founded by seasoned higher education practitioners who firmly believe in the value of international education and cross-cultural experience and growth because they themselves have benefitted from such opportunities. Partnering with high-quality educational entities in China and outstanding institutions of higher learning in the United States, Platina leverages its expertise and on-the-ground experiences in American higher education to serve as a bridge of opportunities for aspiring students from Greater China to access the rich educational resources in the United States. Platina’s services are intentionally integrative, comprising the three interconnected tracks of admissions and placement, education and learning, and advising and support.

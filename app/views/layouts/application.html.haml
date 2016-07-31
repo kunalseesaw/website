@@ -1,0 +1,28 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title FC | Software Engineer
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    %script{:src => "assets/customjs.js", :type => "text/javascript"}
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+          %meta{:content => "Website", :name => "description"}
+            %meta{:content => "F.Cheng", :name => "author"}
+              %link{:href => "../../favicon.ico", :rel => "icon"}
+              %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:300", :rel => "stylesheet", :type => "text/css"}
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = render 'layouts/shim'
+  %body
+  #container
+    = render 'layouts/header'
+    .container
+      = yield
+    = render 'layouts/footer'
+    / Bootstrap core JavaScript ==================================================
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+    / %= javascript_include_tag "bootstrap.min" %
+    / script src="assets/bootstrap.min.js"></script

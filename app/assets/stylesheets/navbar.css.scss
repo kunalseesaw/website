@@ -1,0 +1,43 @@
+/****************************************************/
+/* color schemes */
+/****************************************************/
+
+$cartoon-shirt-purple: #6C26CF;
+$info-blue: #5bc0de;
+$default-blue: #428bca;
+$light-purple: #b16fee;
+
+/****************************************************/
+/* NAVBAR CSS */
+/****************************************************/
+
+#navLogo {
+	height: 85px;
+	width: 180px;
+	float: left;
+	margin-left: -20px;
+	margin-top: -5px;
+	padding-bottom: 0px;
+	background-color: white;
+	&:hover {
+		opacity: 0.85;
+	}
+}
+
+.navbar-nav > li > a {
+	color: #000019;
+	background-color: white;
+	margin-top: 25px;
+	letter-spacing: 2.5px;
+	font-size: 12px;
+	&:hover {
+		opacity: 0.85;
+	}
+}
+
+.navbar-nav {
+	border-bottom: 1px solid #ccc;
+	background-color: white;
+	padding-bottom: -10px;
+	width: 100%;
+}

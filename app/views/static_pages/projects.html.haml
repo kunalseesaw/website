@@ -1,0 +1,99 @@
+.projects
+	%h1 Projects
+	%button.btn.btn-default{:type => "button", "data-toggle" => "tab", :href => "#project1", :id => "page1"} 1
+	%button.btn.btn-default{:type => "button", "data-toggle" => "tab", :href => "#project2", :id => "page2"} 2
+	#seeMore
+		&nbsp; &raquo For more, please see my
+		%a{:href => "https://github.com/fhcheng", :target => "_blank"} Github
+		and
+		%a{:href => "http://devpost.com/FayeCheng?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav", :target => "_blank"} Devpost
+		accounts.
+	
+	
+	.panel.panel-primary
+		.panel-body
+			.tab-content
+				#project1.tab-pane.active
+					.projectsBody
+						.row
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('i2share1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/i2share.png", :id => "i2share"}
+							#i2share1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('i2share1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_i2share1"
+								
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('lilypad1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/lilypad1.png", :id => "lilypad"}
+							#lilypad1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('lilypad1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_lilypad1"
+
+						%br
+						.row
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('pinkThink1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/pinkthink.png", :id => "pinkThink"}
+							#pinkThink1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('pinkThink1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_pinkThink1"
+								
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('platina1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/platina.png", :id => "platina"}
+							#platina1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('platina1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_platina1"
+
+				#project2.tab-pane
+					.projectsBody
+						.row
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('tech4all1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/tech4all.png", :id => "tech4all"}
+							#tech4all1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('tech4all1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_tech4all1"
+								
+							.col-md-6
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('website1').style.display='block';document.getElementById('fade').style.display='block'"}
+									%img{:src => "assets/website1.png", :id => "website"}
+							#website1.white_content
+								%a{:href => "javascript:void(0)", :onclick => "document.getElementById('website1').style.display='none';document.getElementById('fade').style.display='none'"}
+									.exit
+										&#215;
+								= render template: "layouts/_website1"
+
+						%br
+						.row
+							.col-md-6
+								/%a{:href => "javascript:void(0)", :onclick => "document.getElementById('comingsoon1').style.display='block';document.getElementById('fade').style.display='block'"}
+								%img{:src => "assets/comingsoon.png", :id => "comingsoon1"}
+							/#pinkThink1.white_content
+							/	%a{:href => "javascript:void(0)", :onclick => "document.getElementById('pinkThink1').style.display='none';document.getElementById('fade').style.display='none'"}
+							/		.exit
+							/			&#215;
+							/	= render template: ""
+								
+							.col-md-6
+								/%a{:href => "javascript:void(0)", :onclick => "document.getElementById('comingsoon2').style.display='block';document.getElementById('fade').style.display='block'"}
+								%img{:src => "assets/comingsoon.png", :id => "comingsoon2"}
+							/#pinkThink1.white_content
+							/	%a{:href => "javascript:void(0)", :onclick => "document.getElementById('pinkThink1').style.display='none';document.getElementById('fade').style.display='none'"}
+							/		.exit
+							/			&#215;
+							/	= render template: ""
+
+
+

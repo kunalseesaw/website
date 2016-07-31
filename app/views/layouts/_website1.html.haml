@@ -1,0 +1,46 @@
+.projectsTop
+	#carousel6.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+		%ol.carousel-indicators
+			%li.active{"data-slide-to" => "0", "data-target" => "#carousel6"}
+			%li{"data-slide-to" => "1", "data-target" => "#carousel6"}
+			%li{"data-slide-to" => "2", "data-target" => "#carousel6"}
+		.carousel-inner
+			.active.item
+				%img{:src => "assets/website1.png", :id => "website_1"}
+			.item
+				%img{:src => "assets/website2.png", :id => "website_2"}
+			.item
+				%img{:src => "assets/website3.png", :id => "website_3"}
+		%a.carousel-control.left{"data-slide" => "prev", :href => "#carousel6"} ‹
+		%a.carousel-control.right{"data-slide" => "next", :href => "#carousel6"} ›
+	.projectDetails
+		%h1 My Website
+		%h2 Personal Web Resume
+		
+		.projectTable
+			%table
+				%tr
+					%td
+						%b Role:
+					%td
+						%b Developer
+				%tr
+					%td
+						%b Website:
+					%td
+						%a{:href => "https://github.com/fhcheng/faye-website", :target => "_blank"} github.com/fhcheng/faye-website
+				%tr
+					%td
+						%b Status:
+					%td Completed - but always updating!
+				%tr
+					%td
+						%b Tools:
+					%td Ruby on Rails, HTML/CSS, Javascript, Bootstrap, Vagrant, Chef, Git
+%br
+	.projectDescription
+		%h3 Description
+		%p I wanted to create a personal website from scratch, and created this Rails App as a side project. I really enjoyed experimenting with javascript, further expanding my development skills, and modifying code elements to implement site features successfully. I also wanted to focus on creating a simple and elegant UX design.
+
+		%h3 Product
+		%p It is my hope that visitors to my site will be able to get a good idea of my programming and design skills, my personal experiences, and assess my potential as a Software Engineer and Product Manager.

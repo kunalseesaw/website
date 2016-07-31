@@ -1,0 +1,117 @@
+.publicationsPage
+	%h1 Publications
+	%p
+	.container-fluid
+		#custom_carousel.carousel.slide{"data-interval" => "0", "data-ride" => "carousel"}
+			/ Wrapper for slides
+			.carousel-inner
+				.item.slide1.active
+					.container-fluid
+						.row
+							.col-md-5
+								%a{:href => "http://anitaborg.org/news/blog/my-first-hackathon-and-i-was-a-winner/", :target => "_blank"}
+									%img.img-responsive{:src => "assets/tab2.png"}
+							.col-md-7
+								%h2 Best of Systers Blog:
+								%h2 First Hackathon Experience
+								%p
+								%i.fa.fa-quote-left{"aria-hidden" => "true"}
+									%b My First Hackathon and I was a winner!
+								%br
+								I am a second year graduate student studying Computer Science at Mills College, a small liberal arts institution located in the SF Bay Area. Earlier this summer, I had the opportunity to attend the 2015 EmpowHERment Summit hosted by Qualcomm in San Diego, CA...
+								%i.fa.fa-quote-right{"aria-hidden" => "true"}
+									%b &nbsp;
+								%p
+								%a.center{:href => "http://anitaborg.org/news/blog/my-first-hackathon-and-i-was-a-winner/", :target => "_blank"} [Read entire article]
+				.item.slide2
+					.container-fluid
+						.row
+							.col-md-5
+								%a{:href => "http://anitaborg.org/profiles/qualcomm-womens-summit/", :target => "_blank"}
+									%img.img-responsive{:src => "assets/tab1.png"}
+							.col-md-7
+								%h2 ABI Partner's Spotlight: Qualcomm
+								%p
+								%i.fa.fa-quote-left{"aria-hidden" => "true"}
+									%b Qualcomm Women's Summit: Women in Technology Overcome Fear to Embrace Opportunity
+								%br
+								When Faye Cheng first arrived at her first ever hackathon, she was nervous. "I only had about a semester and a half of programming under my belt, and I was very intimidated," Faye recalls.
+								But by the end of the hackathon, part of Qualcomm Women's Summit held in July 2015, Faye and her team walked away with the Judge's Choice and Best in Category awards...
+								%i.fa.fa-quote-right{"aria-hidden" => "true"}
+								%p
+								%a.center{:href => "http://anitaborg.org/profiles/qualcomm-womens-summit/", :target => "_blank"} [Read entire article]
+				.item.slide3
+					.container-fluid
+						.row
+							.col-md-5
+								%a{:href => "http://ovptl.uci.edu/2016/05/04/chp-alumni-spotlight-faye-cheng-13/", :target => "_blank"}
+									%img.img-responsive{:src => "assets/tab3.png"}
+							.col-md-7
+								%h2 UCI Campuswide Honors Program
+								%p
+								%i.fa.fa-quote-left{"aria-hidden" => "true"}
+									%b Alumni Spotight - Faye Cheng ('13)
+								%br
+								Coding is not just a man's game. CHP aluma Faye Cheng ('13) is combining her burgeoning skills in programming and her love of mentorship to empower girls to get involved in technology froma young age. A student in the Mills College Computer Science Graduate Program, Faye was nominated by the Anita Borg Institute to attend the Qualcomm EmpowHERment Summit in July 2015...
+								%i.fa.fa-quote-right{"aria-hidden" => "true"}
+								%p
+								%a.center{:href => "http://ovptl.uci.edu/2016/05/04/chp-alumni-spotlight-faye-cheng-13/", :target => "_blank"} [Read entire article]
+				.item.slide4
+					.container-fluid
+						.row
+							.col-md-5
+								%a{:href => "https://reigningit.wordpress.com/2016/02/09/women-who-reign-faye-cheng/", :target => "_blank"}
+									%img.img-responsive{:src => "assets/tab4.png"}
+							.col-md-7
+								%h2 Women Who Reign: ReigningIt
+								%p
+								%i.fa.fa-quote-left{"aria-hidden" => "true"}
+									%b Creating a #STEM dialogue inclusive of every woman.
+								As a career-changer coming from a non-technical background in Sociology and Business, my path to Computer Science has been unconventional and often intimidating. Earlier this summer, I had the opportunity to participate in my first hackathon [...] This event helped me realize that my non-technical experiences were not handicaps, but assets to my role as a Computer Scientist..
+								%i.fa.fa-quote-right{"aria-hidden" => "true"}
+								%p
+								%a.center{:href => "https://reigningit.wordpress.com/2016/02/09/women-who-reign-faye-cheng/", :target => "_blank"} [Read entire article]
+				.item.slide5
+					.container-fluid
+						.row
+							.col-md-5
+								%a{:href => "http://www.thecampanil.com/tech4all-achieves-just-that/", :target => "_blank"}
+									%img.img-responsive{:src => "assets/tab5.png"}
+							.col-md-7
+								%h2 The Campanil: University Newspaper
+								%p
+								%i.fa.fa-quote-left{"aria-hidden" => "true"}
+									%b Tech4All Achieves Exactly That
+								%br
+								After about twelve hours of planning, designing, and preparing, three teams &mdash; The Cassandra Institute, S2S, and History News Network &mdash; participating in the Tech4All hackathon got ready to present their projects to their peers and the judges. The Hackathon was created as an inclusive space for interdisciplinary collaboration and it achieved its goal...
+								%i.fa.fa-quote-right{"aria-hidden" => "true"}
+								%p
+								%a.center{:href => "http://www.thecampanil.com/tech4all-achieves-just-that/", :target => "_blank"} [Read entire article]
+				/ End Item
+			/ End Carousel Inner
+			.controls
+				%ul.nav
+					%li.active{"data-slide-to" => "0", "data-target" => "#custom_carousel"}
+						%a{:href => "#"}
+							%img{:src => "assets/abi.png"}/
+							%small Best of Systers
+					%li{"data-slide-to" => "1", "data-target" => "#custom_carousel"}
+						%a{:href => "#"}
+							%img{:src => "assets/qualcomm.png"}/
+							%small Qualcomm Summit
+					%li{"data-slide-to" => "2", "data-target" => "#custom_carousel"}
+						%a{:href => "#"}
+							%img{:src => "assets/chp.png"}/
+							%small UCI Honors Alumnae
+					%li{"data-slide-to" => "3", "data-target" => "#custom_carousel"}
+						%a{:href => "#"}
+							%img{:src => "assets/reign.png"}/
+							%small Women Who Reign
+					%li{"data-slide-to" => "4", "data-target" => "#custom_carousel"}
+						%a{:href => "#"}
+							%img{:src => "assets/camp.png"}/
+							%small The Campanil
+		/ End Carousel
+		%p
+		%p.caption
+			%b I am incredibly honored to be highlighted in the following media, to share my experiences and inspire others with my story.

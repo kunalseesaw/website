@@ -1,0 +1,47 @@
+.projectsTop
+	#carousel3.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+		%ol.carousel-indicators
+			%li.active{"data-slide-to" => "0", "data-target" => "#carousel3"}
+			%li{"data-slide-to" => "1", "data-target" => "#carousel3"}
+			%li{"data-slide-to" => "2", "data-target" => "#carousel3"}
+		.carousel-inner
+			.active.item
+				%img{:src => "assets/lilypad1.png", :id => "lilypad_1"}
+			.item
+				%img{:src => "assets/lilypad2.png", :id => "lilypad_2"}
+			.item
+				%img{:src => "assets/lilypad3.png", :id => "lilypad_3"}
+		%a.carousel-control.left{"data-slide" => "prev", :href => "#carousel3"} ‹
+		%a.carousel-control.right{"data-slide" => "next", :href => "#carousel3"} ›
+
+	.projectDetails
+		%h1 LilyPad
+		%h2 Spectra Hackathon 2016
+		
+		.projectTable
+			%table
+				%tr
+					%td
+						%b Role:
+					%td
+						%b Full-stack Programmer, Product Leader
+				%tr
+					%td
+						%b Website:
+					%td
+						%a{:href => "http://devpost.com/software/spectra16", :target => "_blank"} http://devpost.com/software/spectra16
+				%tr
+					%td
+						%b Status:
+					%td Summer 2016
+				%tr
+					%td
+						%b Tools:
+					%td Youtube API, Python, Flask, HTML/CSS, Bootstrap
+
+%br
+	.projectDescription
+		%h3 Description
+		%p A participant of the first annual Spectra Hackathon held at Youtube HQ, I worked on a team of 5 to implement LilyPad. As the Product Leader, I helped my team organize our workflow and lead scrum meetings throughout the hackathon. I created the write-up for our project on DevPost, and was responsibile for our pitch and demo. I also contributed to the development of our python web app.
+		%h3 Product
+		%p Our team was inspired by Youtube's API to create an interactive platform where videos, like on Youtube, would give us an added layer of authenticity and connectivity for our users. LilyPad is a roommate matching service that pairs compatible users based on unique search criteria which connects them to our library of videos uploaded to LilyPad.

@@ -1,0 +1,31 @@
+%body#home
+	.homeDiv.center
+		%img{:src => "assets/self-bw-1.png", :id => "self"}
+		.homeDivHeader
+			%h1 FAYE CHENG
+			%hr.homeHR
+			.homeDivText	
+				.headerText
+					%b Hi there, I'm Faye.
+					%p Web Developer, UX Designer, and Sociologist turned Software Engineer.
+					%p
+					%a{:href => about_path}
+						#learnMore
+							.back
+								.button_base.b05_3d_roll
+									%div ENTER SITE
+									%div ENTER SITE
+
+		%link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", :rel => "stylesheet"}
+		.homeLinks
+			.text-left.left-block
+				%a{:href => "https://www.linkedin.com/in/fayehcheng", :target => "_blank"}
+					%i.fa.fa-linkedin-square.fa-3x.social
+				%a{:href => "https://github.com/fhcheng", :target => "_blank"}
+					%i.fa.fa-github-square.fa-3x.social
+				%a{:href => "https://bitbucket.org/fhcheng/", :target => "_blank"}
+					%i.fa.fa-bitbucket-square.fa-3x.social
+				%a{:href => "https://twitter.com/fayehcheng", :target => "_blank"}
+					%i.fa.fa-twitter-square.fa-3x.social
+				%a{:href => "mailto:fayehcheng@gmail.com", :target => "_blank"}
+					%i.fa.fa-envelope-square.fa-3x.social

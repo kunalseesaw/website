@@ -1,0 +1,414 @@
+
+.projects {
+	font-size: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	h1 {
+		display: inline-block;
+	}
+	img:hover {
+		opacity: 0.8;
+	}
+	#seeMore {
+		float: right;
+		padding-right: 5px;
+		padding-top: 22px;
+		margin-right: 25px;
+	}
+	#page1 {
+		font-size: 1em;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 10px;
+		margin-top: -12px;
+	}
+	#page2 {
+		font-size: 1em;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 2px;
+		margin-top: -12px;
+	}
+}
+
+.projectsBody {
+	margin-left: 10%;
+	.col-md-6 {
+		padding: 0px;
+		width: 350px;
+		height: 200px;
+		padding-left: 20px;
+	}
+}
+
+.exit {
+	font-size: 50px;
+	color: black;
+	position: fixed;
+	right: 13%;
+	top: 18%;
+}
+
+
+/*********************************************************/
+/* Tabs for 2 projects */                           
+/*********************************************************/
+
+/*Panel tabs*/
+.panel-tabs {
+    position: relative;
+    bottom: 10px;
+    clear:both;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.panel-tabs > li > a {
+    margin-right: 2px;
+    margin-top: 4px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+}
+
+.panel-tabs > li > a:hover {
+    border-color: transparent;
+    color: #fff;
+    background-color: #428bca;
+}
+
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, .23);
+}
+
+.panel-heading {
+	width: 202px;
+	padding-left: 20px;
+}
+
+.panel {
+	border: 0px;
+}
+
+/*********************************************************/
+/* project details pop-up */                         /* BLACK / WHITE */
+/*********************************************************/
+
+.white_content {
+	box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.18), 0 20px 50px 0 rgba(0, 0, 0, 0.18);
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	padding: 10px;
+	padding-right: 0px;
+	border: 7px solid black;
+	background-color: #fff;
+	z-index:1002;
+	overflow: auto;
+}
+
+#i2share1 {
+	border: 7px solid #6CC296;
+}
+
+#lilypad1 {
+	border: 7px solid #FFB6C1;
+}
+
+#pinkThink1 {
+	border: 7px solid #FC1988;
+}
+
+#platina1 {
+	border: 7px solid #2E1B5E;
+}
+
+#tech4all1 {
+	border: 7px solid #2E1B5E;
+}
+
+#website1 {
+	border: 7px solid #2E1B5E;
+}
+
+/*********************************************************/
+/* project details PARTIALS */
+/*********************************************************/
+
+.projectsTop {
+
+	.carousel-fade {
+		.carousel-indicators {
+			display: none;
+		}
+		.carousel-inner {
+
+			img:hover {
+				opacity: 1;
+			}
+			.item {
+				transition-property: opacity;
+			}
+			
+			.item,
+			.active.left,
+			.active.right {
+				opacity: 0;
+			}
+
+			.active,
+			.next.left,
+			.prev.right {
+				opacity: 1;
+			}
+
+			.next,
+			.prev,
+			.active.left,
+			.active.right {
+				left: 0;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		.carousel-control {
+			z-index: 2;
+		}
+		.carousel-control.left {
+			padding-top: 25%;
+			font-size: 2em;
+		}
+		.carousel-control.right {
+			padding-top: 25%;
+			font-size: 2em;
+		}
+	}
+
+	html, 
+	body, 
+	.carousel, 
+	.carousel-inner, 
+	.carousel-inner .item {
+		height: 230px;
+		width: 380px;
+		float: left;
+	}
+
+	.item:nth-child(1) {
+		border: 1px solid black;
+		#i2share_1 {
+			width: 100%;
+			height: 100%;
+		}
+		#lilypad_1 {
+			width: 100%;
+			height: 100%;
+		}
+		#pinkThink_1 {
+			width: 100%;
+			height: 100%;
+		}
+		#platina_1 {
+			width: 100%;
+			height: 100%;
+		}
+		#tech4all_1 {
+			width: 100%;
+			height: 100%;
+		}
+		#website_1 {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.item:nth-child(2) {
+		border: 1px solid black;
+		#i2share_2 {
+			width: 100%;
+			height: 100%;
+		}
+		#lilypad_2 {
+			width: 100%;
+			height: 100%;
+		}
+		#pinkThink_2 {
+			width: 100%;
+			height: 100%;
+		}
+		#platina_2 {
+			width: 100%;
+			height: 100%;
+		}
+		#tech4all_2 {
+			width: 100%;
+			height: 100%;
+		}
+		#website_2 {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.item:nth-child(3) {
+		border: 1px solid black;
+		#i2share_3 {
+			width: 100%;
+			height: 100%;
+		}
+		#lilypad_3 {
+			width: 100%;
+			height: 100%;
+		}
+		#pinkThink_3 {
+			width: 100%;
+			height: 100%;
+		}
+		#platina_3 {
+			width: 100%;
+			height: 100%;
+		}
+		#tech4all_3 {
+			width: 100%;
+			height: 100%;
+		}
+		#website_3 {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+/*********************************************************/
+/* project details expand */
+/*********************************************************/
+
+.projectsTop {
+	width: 98%;
+	padding-top: 15px;
+	padding-left: 15px;
+	height: auto;
+	display: inline-block;
+	h1 {
+		margin-top: -10px;
+		font-size: 3.3em;
+		display: inline-block;
+	}
+	h2 {
+		padding: 0px;
+		margin-top: -10px;
+		font-size: 2em;
+	}
+
+	p {
+		margin-bottom: 1px;
+		font-size: 15px;
+	}
+}
+
+.projectDetails {
+	float: right;
+	text-align: left;
+	width: 50%;
+	padding-top: 5px;
+}
+
+.projectDescription {
+	width: 100%;
+	clear: both;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	margin-bottom: -30px;
+	p {
+		padding-right: 10px;
+	}
+	h3 {
+		margin-top: 8px;
+		margin-bottom: 3px;
+	}
+}
+
+.projectTable {
+	background-color: #eaeaea;
+	line-spacing: 1.5em;
+	margin-right: 30px;
+	padding-left: 5px;
+	td {
+		padding: 5px;
+		font-size: 15px;
+	}
+}
+
+/*********************************************************/
+
+#i2share {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+
+#lilypad {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+#pinkThink {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+
+#platina {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+
+#tech4all {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+
+#website {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+}
+#comingsoon1 {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+	opacity: 0.85;
+}
+#comingsoon2 {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 100%;
+	border: 3px solid #191919;
+	opacity: 0.85;
+}

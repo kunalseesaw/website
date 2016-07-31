@@ -1,0 +1,31 @@
+#header
+%header.navbar.navbar-fixed-top.navbar-inner
+  .container
+    %nav
+      %ul.nav.navbar-nav.center
+        %a{:href => index_path} 
+          %img{:alt => "", :src => "assets/about1.png", :id => "navLogo"}
+        %li= link_to "ABOUT",   about_path
+        %li= link_to "PROJECTS",   projects_path
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            PORTFOLIO
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => publications_path} Publications
+            %li.divider
+            %li
+              %a{:href => designs_path} Graphic Design
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            RESUME
+            %b.caret
+          %ul.dropdown-menu
+            %li
+            %li
+              %a{:href => resume_path} Software Engineering
+            %li.divider
+            %li
+              %a{:href => leadership_path} Leadership Involvements
+        %li= link_to "CONTACT", contact_path
