@@ -49,6 +49,8 @@ group :development do
   gem 'spring'
 
   gem 'font-awesome-sass'
+
+  gem 'rails_12factor', group: :production
   
 end
 
