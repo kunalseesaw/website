@@ -29,6 +29,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'puma'
 
+
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,7 +56,11 @@ group :development do
 
   gem 'font-awesome-sass'
 
-  gem 'rails_12factor', group: :production
-  
 end
+
+group :production do
+	gem 'haml'
+end
+
+gem 'rails_12factor', group: :production
 
